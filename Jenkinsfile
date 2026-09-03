@@ -28,7 +28,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                sh 'ansible-playbook -i /root/ansible-capstone/inventory.ini /root/ansible-capstone/deploy.yml'
+                sh 'ansible-playbook -i /var/lib/jenkins/ansible-capstone/inventory.ini /var/lib/jenkins/ansible-capstone/deploy.yml'
             }
         }
     }
